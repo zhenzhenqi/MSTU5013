@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>my meme library</title>
+</head>
+<style>
+	/* body {background-color: black;} */
+</style>
+
+<body>
+	<tag-a></tag-a>
+	<tag-b></tag-b>
+
+	<script src="./tags/tag-a.tag" type="riot/tag"></script>
+	<script src="./tags/tag-b.tag" type="riot/tag"></script>
+
+
+	<script src="https://cdn.jsdelivr.net/riot/3.1.0/riot+compiler.js"></script>
+
+	<script>
+		var observable = riot.observable();
+		riot.mount('*');
+	</script>
+</body>
+
+</html>

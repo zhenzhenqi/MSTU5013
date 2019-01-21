@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
-	<title>my meme library</title>
+	<title>Document</title>
+	<link rel="stylesheet" href="/styles.css">
 </head>
-<style>
-	body {background-color: black;}
-</style>
-
 <body>
-	<header></header>
-	<app></app>
-	<footer></footer>
+	<h1>Riot Syntax</h1>
+	<p>This demonstration shows some of the syntax of Riot in play.</p>
 
-	<script src="./tags/app.tag" type="riot/tag"></script>
-	<script src="./tags/header.tag" type="riot/tag"></script>
-	<script src="./tags/footer.tag" type="riot/tag"></script>
-	<script src="./tags/meme1.tag" type="riot/tag"></script>
-	<script src="./tags/meme2.tag" type="riot/tag"></script>
+	<div class="example">
+		<h2>Custom Component A:</h2>
+		<interpolation></interpolation>
+	</div>
 
-	<script src="https://cdn.jsdelivr.net/riot/3.1.0/riot+compiler.js"></script>
+	<div class="example">
+		<h2>Custom Component B:</h2>
+		<expressions></expressions>
+	</div>
 
-	<script>
-		riot.mount('*');
-	</script>
+
+	<!-- Make sure all your tag files are listed like this. -->
+	<script src="./tags/interpolation.tag" type="riot/tag"></script>
+	<script src="./tags/expressions.tag" type="riot/tag"></script>
+
+	<!-- Load RiotJS and the COMPILER, which will transform your tags into JS -->
+	<script src="https://cdn.jsdelivr.net/riot/3.0/riot+compiler.min.js"></script>
+
+	<!-- Your own custom JS, I am INITIALIZING the tags in this code -->
+	<script src="js/main.js"></script>
 </body>
-
 </html>
