@@ -4,7 +4,6 @@
   	<button type="button" onclick={ saveMsg }>Save Message</button>
 
   	<script>
-      var this = tags;
       //refering to the rootRef definition in html, let's define a node that's the direct child of it
       //and call this node messages
   		var messagesRef = rootRef.child('/messages');
